@@ -21,6 +21,15 @@
                 
             }
 
+            footer {
+                background-color: #1d59cc;
+                text-align: center;
+                font-family: Verdana;
+                color: white;
+                padding: 10px;
+                margin: 0;
+            }
+
             ul {
                 list-style-type: none;
                 margin: 0;
@@ -51,7 +60,7 @@
 
             }
 
-            #about {
+            #about, #gallery, #pricing {
                 background-color: #031540;
                 padding: 5px;
             }
@@ -97,7 +106,9 @@
                     <li><a href="#home">Contact</a></li>
                 </ul>
             </nav>
-
+ <!--
+    Sticky sidebar needs to be fixed while transition from relative to fixed, it can twitch or remove visible text.
+ -->
             <script>
                 window.onscroll = function() {myFunbction()};
     
@@ -124,17 +135,41 @@
                     for the free estimate. <br><br>
                     <p class="aboutp" style="font-size:40px;text-align: center;"><strong>Do not let your eyes cover in tears while looking at the dents on your car,
                          come today and find the pleasure of watching your car again!</strong></p> 
-
                 </p>
-
             </article>
+
+            <div id="gallery">
+                <h2 style="padding-top:20px;">Pictures of repairs</h2>
+                <!--
+                    Pictures taken from: https://pixabay.com/pl/users/bnt_photographer-23246499/
+                -->
+                <img src="images/gallery/1.jpg" alt="picture of a sea" width="30%" height="15%" style="padding:15px;">
+                <img src="images/gallery/2.jpg" alt="picture of a kitten" width="30%" height="15%" style="padding:15px;">
+                <img src="images/gallery/3.jpg" alt="picture of a cat" width="30%" height="15%" style="padding:15px;">
+                <img src="images/gallery/4.jpg" alt="picture of a cat" width="30%" height="15%" style="padding:15px;">
+                <img src="images/gallery/5.jpg" alt="picture of a mall" width="30%" height="15%" style="padding:15px;">
+                <img src="images/gallery/6.jpg" alt="picture of a dog" width="30%" height="15%" style="padding:15px;">
+                <img src="images/gallery/7.jpg" alt="picture of a puppy" width="30%" height="15%" style="padding:15px;">
+                <img src="images/gallery/8.jpg" alt="picture of a bridge" width="30%" height="15%" style="padding:15px;">
+                <img src="images/gallery/9.jpg" alt="picture of a sea" width="30%" height="15%" style="padding:15px;">
+                <img src="images/gallery/10.jpg" alt="picture of a scyscrapers" width="30%" height="15%" style="padding:15px;">
+                <img src="images/gallery/11.jpg" alt="picture of a city" width="30%" height="15%" style="padding:15px;">
+                <img src="images/gallery/12.jpg" alt="picture of a temple" width="30%" height="15%" style="padding:15px;">
+            </div>
+
+            <div id="pricing">
+                <h2 style="padding-top:20px;">Pricing</h2>
+            </div>
         </section>
 
 
 
 
         <footer>
-
+            <p>Sample project created by Piotr Bobeł<br>
+                All rights reserve<br>
+                Do not use without the author permission<br>
+            </p>
         </footer>
 
     </body>
