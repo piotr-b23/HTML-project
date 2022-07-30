@@ -9,10 +9,10 @@
 
         <style>
             body {
-                background-color: #e2d5f5;
+                background-color: #98b7ed;
             }
             h1 {
-                background-color: #8b82a1;
+                background-color: #1d59cc;
                 text-align: center;
                 font-family: Verdana;
                 color: white;
@@ -26,7 +26,7 @@
                 margin: 0;
                 padding: 0;
                 overflow: hidden;
-                background-color: #686375;
+                background-color: #043694;
             }
 
             li {
@@ -45,27 +45,92 @@
 
             li a:hover {
                 background-color: #262429;
+                text-decoration: underline;
+                text-decoration-color: white;
+                text-underline-offset: 12px;
 
+            }
+
+            #about {
+                background-color: #031540;
+                padding: 5px;
+            }
+
+            h2 {
+                color: white;
+                text-align: center;
+                padding-top: 60px;
+                margin-bottom: 2px;
+                font-size: 40px;
+            }
+
+            .aboutp {
+                color: white;
+                margin-top: 3px;
+                font-size: 30px;
+                text-align: center;
+
+            }
+
+            .sticky {
+                position: fixed;
+                top: 0px;
+                width: 100%;
             }
 
         </style>
 
-        <script>
-
-        </script>
-
     </head>
 
     <body>
-        <header>
+        <header id="home">
         <h1>Hail Damage Pro Removers <img src="images/favicon.png" alt="logo" width="35px" height="35px"> </h1>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#home">Contact</a></li>
-        </ul>
         </header>
+
+        <section>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#home">Contact</a></li>
+                </ul>
+            </nav>
+
+            <script>
+                window.onscroll = function() {myFunbction()};
+    
+                var navbar = document.getElementById("navbar");
+                var sticky = navbar.offsetTop;
+    
+                function myFunbction() {
+                    if (window.pageYOffset >= sticky){
+                        navbar.classList.add("sticky")
+                    } else {
+                        navbar.classList.remove("sticky");
+                    }
+                }
+    
+            </script>
+
+            <article id="about">
+                <h2>Why exactly us?</h2><br>
+                <p class="aboutp">
+                    &emsp;We are the bunch of people you never want too meet in your life, but when the "wheather" hits the fan, we are just the type of people you are looking for.
+                    For last 15 years we were pulling dents from various cars that were caused by hail, minor bumps or not the very carefull type of people at the parking lot.<br><br>
+                    &emsp;You are wondering, if we can pull the dent out of your car, the simple answer is <strong>"If the paint is intact, we can!"</strong>. Thousends of positive reviews,
+                    albums on top of albums of picture taken before and after the rapair speek for themselves. We are the best at this type of repair. Give us a call or visit us
+                    for the free estimate. <br><br>
+                    <p class="aboutp" style="font-size:40px;text-align: center;"><strong>Do not let your eyes cover in tears while looking at the dents on your car,
+                         come today and find the pleasure of watching your car again!</strong></p> 
+
+                </p>
+
+            </article>
+        </section>
+
+
 
 
         <footer>
