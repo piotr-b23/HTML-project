@@ -60,7 +60,7 @@
 
             }
 
-            #about, #gallery, #pricing, #howto {
+            #about, #gallery, #pricing, #howto, #contact {
                 background-color: #031540;
                 padding: 5px;
             }
@@ -73,7 +73,7 @@
                 font-size: 40px;
             }
 
-            .aboutp {
+            .aboutp, .pricingp {
                 color: white;
                 margin-top: 3px;
                 font-size: 30px;
@@ -85,6 +85,23 @@
                 position: fixed;
                 top: 0px;
                 width: 100%;
+            }
+
+            table, th, td {
+                border: 1px solid white;
+                border-collapse: collapse;
+                text-align: center;
+            }
+
+            address {
+                color: white;
+                text-align: center;
+                font-size: 20px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            input, textarea {
+                font-size: 20px;
             }
 
         </style>
@@ -104,7 +121,7 @@
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#howto">How we do it</a></li>
                     <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#home">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
  <!--
@@ -144,6 +161,7 @@
                 <!--
                     Pictures taken from: https://pixabay.com/pl/users/bnt_photographer-23246499/
                 -->
+                <p style="text-align:center ;">
                 <img src="images/gallery/1.jpg" alt="picture of a sea" width="30%" height="15%" style="padding:15px;">
                 <img src="images/gallery/2.jpg" alt="picture of a kitten" width="30%" height="15%" style="padding:15px;">
                 <img src="images/gallery/3.jpg" alt="picture of a cat" width="30%" height="15%" style="padding:15px;">
@@ -156,13 +174,14 @@
                 <img src="images/gallery/10.jpg" alt="picture of a scyscrapers" width="30%" height="15%" style="padding:15px;">
                 <img src="images/gallery/11.jpg" alt="picture of a city" width="30%" height="15%" style="padding:15px;">
                 <img src="images/gallery/12.jpg" alt="picture of a temple" width="30%" height="15%" style="padding:15px;">
+                </p>
             </div>
 
             <div id="howto">
                 <h2 style="padding-top:20px;">How we do it</h2>
                 <p style="text-align:center ;">
                 <!--
-                    Had to put something as a movie and decided on the recording of me driftin :)
+                    Had to put something as a movie and decided on the recording of me drifting :)
                 -->
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/bwBUmSze2ZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </p>
@@ -171,12 +190,69 @@
 
             <div id="pricing">
                 <h2 style="padding-top:20px;">Pricing</h2>
-
+                <p class="pricingp">Presented pricing is shown just for roughly visualizing the cost of potential repair. <br>
+                    <strong>The final cost may by diffrent due to severity of dents and state of a paint.</strong><br>
+                    Come for free estiamtion and decide whether or not you want to bring your car the the almoast factory new look.
+                </p>
+                <p style="text-align:center ;">
+                    <table style="color: white; font-size: 25px; width: 35%; margin-left: auto;margin-right: auto;">
+                        <tr>
+                            <th>Dent count</th>
+                            <th>Potential repair cost</th>
+                        </tr>
+                        <tr>
+                            <td>1 - 5</td>
+                            <td>50 - 400</td>
+                        </tr>
+                        <tr>
+                            <td>6 - 25</td>
+                            <td>500 - 1000</td>
+                        </tr>
+                        <tr>
+                            <td>26 - 60</td>
+                            <td>1100 - 2000</td>
+                        </tr>
+                        <tr>
+                            <td>61 - 120</td>
+                            <td>2100 - 4000</td>
+                        </tr>
+                        <tr>
+                            <td>121 - 250</td>
+                            <td>4100 - 8000</td>
+                        </tr>
+                        <tr>
+                            <td>250 +</td>
+                            <td>8100 +</td>
+                        </tr>
+                    </table>
+                </p>
+                <p class="pricingp">Additional costs may include removal of a headliner, removal of wax or ceramic coating, cleaning car.
+                </p>
             </div>
+
+            <div id="contact">
+                <h2>Contact information</h2>
+                <address>
+                    41-284 Lentino Ark <br>
+                    43a Sunniest st. <br>
+                    tel. 195 121 195 <br>
+                    email: hail_pro_removers@fix.com <br>
+                </address>
+                <br>
+
+                <form style="color:white ;font-size:20px; ">
+                    <label for="fname">First name: </label><br>
+                    <input type="text" id="fname" name="name" width="100%" required><br>
+                    <label for="email">Email address: </label><br>
+                    <input type="text" id="email" name="email" required><br>
+                    <label for="description">Damage description:</label><br>
+                    <textarea id="description" name="description" required rows="15" cols="100" ></textarea><br>
+                    <input type="file" multiple><br><br>
+                    <input type="submit" value="Send message">
+                </form>
+            </div>
+
         </section>
-
-
-
 
         <footer>
             <p>Sample project created by Piotr Bobeł<br>
