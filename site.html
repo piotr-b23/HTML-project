@@ -9,7 +9,8 @@
 
         <style>
             body {
-                background-color: #98b7ed;
+                margin: 0;
+                background-color: #031540;
             }
             h1 {
                 background-color: #1d59cc;
@@ -61,9 +62,10 @@
             }
 
             #about, #gallery, #pricing, #howto, #contact {
-                background-color: #031540;
+                
                 padding: 5px;
             }
+            
 
             h2 {
                 color: white;
@@ -240,13 +242,17 @@
                 </address>
                 <br>
 
-                <form style="color:white ;font-size:20px; ">
+                <form style="color:white ;font-size:20px; margin-left: 25%;">
                     <label for="fname">First name: </label><br>
-                    <input type="text" id="fname" name="name" width="100%" required><br>
+                    <input type="text" id="fname" name="name" required><br>
                     <label for="email">Email address: </label><br>
                     <input type="text" id="email" name="email" required><br>
                     <label for="description">Damage description:</label><br>
-                    <textarea id="description" name="description" required rows="15" cols="100" ></textarea><br>
+
+                    <!--
+                        Resizeble text area should be done in JS.
+                    -->
+                    <textarea id="description" name="description" required rows="15" cols="100" style="resize:both;" ></textarea><br>
                     <input type="file" multiple><br><br>
                     <input type="submit" value="Send message">
                 </form>
