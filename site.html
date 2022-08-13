@@ -111,6 +111,13 @@
 
             }
 
+            #description {
+                width: 550px;
+                box-sizing: border-box;
+                height: 250px;
+                resize:none;
+            }
+
         </style>
 
     </head>
@@ -281,7 +288,7 @@
                     <!--
                         Resizeble text area should be done in JS.
                     -->
-                    <textarea id="description" name="description" required rows="15" cols="100" style="resize:both;" ></textarea><br>
+                    <textarea id="description" name="description"></textarea><br>
                     <input type="file" multiple><br><br>
                     <input type="submit" value="Send message">
                 </form>
