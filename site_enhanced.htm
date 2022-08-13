@@ -43,6 +43,10 @@
 
             }
 
+            .topnav {
+                display: unset;
+            }
+
             .topnav ul {
                 list-style-type: none;
                 margin: 0;
@@ -50,6 +54,9 @@
                 font-family: 'Racing Sans One';
                 overflow: hidden;
                 background-color: #1449ac;
+                position: -webkit-sticky; /* Safari */
+                position: sticky;
+                top: 0;
             }
 
             .topnav li {
@@ -86,14 +93,59 @@
                 margin: 30px;
                 border-radius: 5px 30px 50px 15px;
                 background-color: rgb(42, 60, 141);
+                text-align: center;
             }
+
+        
+
+            .responsive {
+                padding: 0 15px;
+                float: left;
+                width: 33.3%;
+            }
+
+            .galleryimg img {
+                width: 100%;
+                height: auto;
+            }
+
+            .clearfix {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            
+            @media only screen and (max-width:700px) {
+                .responsive {
+                    width: 49.9%;
+                    margin: 4px 0;
+                    
+                }
+            }
+
+            @media only screen and (max-width:500px) {
+                .responsive {
+                    width: 99.9%;
+                }
+            }
+
+            #howto {
+                padding: 15px;
+                margin: 30px;
+                border-radius: 15px 50px 30px 5px;
+                background-color: rgb(42, 60, 141);
+                text-align: center;
+            }
+
+
+
         </style>
 
     </head>
 
     <body>
 
-        <div class="header">
+        <div class="header" id="home">
             <h1>Hail Damage Pro Removers <img src="images/favicon.png" alt="logo" width="75px" height="75px"> </h1>
         </div>
 
@@ -102,7 +154,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#howto">How we do it</a></li>
+                <li><a href="#howto">How do we do it</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -122,12 +174,109 @@
                 </p>
             </div>
 
-            <div id="gallery">
+            <div id="gallery" class="clearfix">
                 <h2 class="headerlow">Pictures of repairs</h2>
+                <div class="responsive">
+                    <div class="galleryimg">
+                        <a href="images/gallery/1.jpg" target="_blank">
+                            <img src="images/gallery/1.jpg" alt="picture of a sea">
+                        </a>
+                    </div>
+                </div>
 
+                <div class="responsive">
+                    <div class="galleryimg">
+                        <a href="images/gallery/2.jpg" target="_blank">
+                            <img src="images/gallery/2.jpg" alt="picture of a kitten">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="galleryimg">
+                        <a href="images/gallery/3.jpg" target="_blank">
+                            <img src="images/gallery/3.jpg" alt="picture of a cat">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="galleryimg">
+                        <a href="images/gallery/4.jpg" target="_blank">
+                            <img src="images/gallery/4.jpg" alt="picture of a cat">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="galleryimg">
+                        <a href="images/gallery/5.jpg" target="_blank">
+                            <img src="images/gallery/5.jpg" alt="picture of a mall">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="galleryimg">
+                        <a href="images/gallery/6.jpg" target="_blank">
+                            <img src="images/gallery/6.jpg" alt="picture of a dog">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="galleryimg">
+                        <a href="images/gallery/7.jpg" target="_blank">
+                            <img src="images/gallery/7.jpg" alt="picture of a puppy">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="galleryimg">
+                        <a href="images/gallery/8.jpg" target="_blank">
+                            <img src="images/gallery/8.jpg" alt="picture of a bridge">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="galleryimg">
+                        <a href="images/gallery/9.jpg" target="_blank">
+                            <img src="images/gallery/9.jpg" alt="picture of a sea">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="galleryimg">
+                        <a href="images/gallery/10.jpg" target="_blank">
+                            <img src="images/gallery/10.jpg" alt="picture of a scyscrapers">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="galleryimg">
+                        <a href="images/gallery/11.jpg" target="_blank">
+                            <img src="images/gallery/11.jpg" alt="picture of a city">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="galleryimg">
+                        <a href="images/gallery/12.jpg" target="_blank">
+                            <img src="images/gallery/12.jpg" alt="picture of a temple">
+                        </a>
+                    </div>
+                </div>
             </div>
 
-
+            <div id="howto">
+                <h2 class="headerlow" id="test">How do we do it</h2>
+                    <iframe width="745" height="315" src="https://www.youtube.com/embed/bwBUmSze2ZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
 
     </body>
