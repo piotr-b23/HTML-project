@@ -137,6 +137,35 @@
                 text-align: center;
             }
 
+            #pricing {
+                padding: 15px;
+                margin: 30px;
+                border-radius: 5px 30px 50px 15px;
+                background-color: rgb(42, 60, 141);
+                text-align: center;
+            }
+
+            #pricing table {
+                width: 35%;
+                margin: 25px auto;
+                
+
+            }
+
+            #pricing table, #pricing th, #pricing td {
+                border: 2px solid white;
+                border-collapse: collapse;
+
+            }
+
+            #contact {
+                padding: 15px;
+                margin: 30px;
+                border-radius: 15px 50px 30px  5px;
+                background-color: rgb(42, 60, 141);
+                text-align: center;
+            }
+
 
 
         </style>
@@ -274,8 +303,75 @@
             </div>
 
             <div id="howto">
-                <h2 class="headerlow" id="test">How do we do it</h2>
-                    <iframe width="745" height="315" src="https://www.youtube.com/embed/bwBUmSze2ZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h2 class="headerlow">How do we do it</h2>
+                    <iframe id="movie" width="1490" height="630" src="https://www.youtube.com/embed/bwBUmSze2ZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div id="pricing">
+                <h2 class="headerlow">Pricing</h2>
+                <p>Presented pricing is shown just for roughly visualizing the cost of potential repair. <br>
+                    <strong>The final cost may by diffrent due to severity of dents and state of a paint.</strong><br>
+                    Come for free estiamtion and decide whether or not you want to bring your car the the almoast factory new look.
+                </p>
+                <table>
+                    <tr>
+                        <th>Dent count</th>
+                        <th>Potential repair cost</th>
+                    </tr>
+                    <tr>
+                        <td>1 - 5</td>
+                        <td>50 - 400</td>
+                    </tr>
+                    <tr>
+                        <td>6 - 25</td>
+                        <td>500 - 1000</td>
+                    </tr>
+                    <tr>
+                        <td>26 - 60</td>
+                        <td>1100 - 2000</td>
+                    </tr>
+                    <tr>
+                        <td>61 - 120</td>
+                        <td>2100 - 4000</td>
+                    </tr>
+                    <tr>
+                        <td>121 - 250</td>
+                        <td>4100 - 8000</td>
+                    </tr>
+                    <tr>
+                        <td>250 +</td>
+                        <td>8100 +</td>
+                    </tr>
+                </table>
+                <p>
+                    Additional costs may include removal of a headliner, removal of wax or ceramic coating, cleaning car.
+                </p>
+            </div>
+            <div id="contact">
+                <h2 class="headerlow">Contact information</h2>
+                <address>
+                    41-284 Lentino Ark <br>
+                    43a Sunniest st. <br>
+                    tel. 195 121 195 <br>
+                    email: hail_pro_removers@fix.com <br><br>
+                </address>
+                <p>
+                    Or send a form to us using the website.
+                </p>
+                <form>
+                    <label for="fname">First name: </label><br>
+                    <input type="text" id="fname" name="name" required><br>
+                    <label for="email">Email address: </label><br>
+                    <input type="text" id="email" name="email" required><br>
+                    <label for="description">Damage description:</label><br>
+
+                    <!--
+                        Resizeble text area should be done in JS.
+                    -->
+                    <textarea id="description" name="description"></textarea><br>
+                    <input type="file" multiple><br><br>
+                    <input type="submit" value="Send message">
+                </form>
             </div>
         </div>
 
