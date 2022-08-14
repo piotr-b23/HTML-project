@@ -166,6 +166,65 @@
                 text-align: center;
             }
 
+            #contact form {
+                text-align: left;
+                margin:0 35%;
+            }
+
+            #contact table {
+                width: 100%;
+            }
+
+            #contact input[type=text] {
+                width: 300px;
+                height: 35px;
+                font-size: 20px;
+            }
+
+            #contact textarea {
+                width: 100%;
+                height: 250px;
+                font-size: 20px;
+                resize: none;
+            }
+
+            #contact input[type=file] {
+                text-decoration: none;
+                border: none;
+                padding: 10px 5px;
+                width: 100%;
+                font-family: 'Bungee Inline';
+                font-size: 25px;
+                color:white;
+                right: 0;
+                margin-bottom: 10px;
+
+
+            }
+
+            #contact input[type=submit] {
+                background-color: rgb(168, 170, 173);
+                text-decoration: none;
+                border: none;
+                padding: 10px 5px;
+                width: 100%;
+                font-family: 'Bungee Inline';
+                font-size: 25px;
+                color:black;
+                right: 0;
+
+            }
+
+            .footer {
+                margin: 0;
+                padding: 15px;
+                font-family: 'Racing Sans One';
+                font-size: 24px;
+                text-align: center;
+                background-color: #1449ac;
+
+            }
+
 
 
         </style>
@@ -356,23 +415,42 @@
                     email: hail_pro_removers@fix.com <br><br>
                 </address>
                 <p>
-                    Or send a form to us using the website.
+                    Or send a form to us using the website. <br>
                 </p>
                 <form>
-                    <label for="fname">First name: </label><br>
-                    <input type="text" id="fname" name="name" required><br>
-                    <label for="email">Email address: </label><br>
-                    <input type="text" id="email" name="email" required><br>
+                    <table>
+                        <tr>
+                            <td><label for="fname">First name: </label></td>
+                            <td><input type="text" id="fname" name="name" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email address: </label></td>
+                            <td><input type="text" id="email" name="email" required><br></td>
+                        </tr>
+
+                    </table>
+                                  
                     <label for="description">Damage description:</label><br>
 
                     <!--
                         Resizeble text area should be done in JS.
+
+                        Forms should be scallable
                     -->
                     <textarea id="description" name="description"></textarea><br>
-                    <input type="file" multiple><br><br>
+                    <input type="file" multiple><br>
                     <input type="submit" value="Send message">
                 </form>
             </div>
+        </div>
+
+        <div class="footer">
+            <p>Sample project created by Piotr Bobeł<br>
+                All rights reserve<br>
+                Do not use without the author permission<br>
+                This time, more focused on styling of the website<br>
+            </p>
+
         </div>
 
     </body>
