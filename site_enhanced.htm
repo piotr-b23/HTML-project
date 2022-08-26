@@ -225,6 +225,26 @@
 
             }
 
+            @media screen and (max-width:700px){
+                #contact {
+                    text-align: left;
+                    font-size: 24px;
+                }
+                form {
+                    margin-left: 0 !important;
+                    
+                }
+                #contact input[type=text] {
+                    width: 260px;
+                    font-size: 16px;
+            }
+                #movie {
+                    width: 330px;
+                    height: 160px;
+
+                }
+            }
+
 
 
         </style>
@@ -363,7 +383,7 @@
 
             <div id="howto">
                 <h2 class="headerlow">How do we do it</h2>
-                    <iframe id="movie" width="1490" height="630" src="https://www.youtube.com/embed/bwBUmSze2ZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe id="movie" width="600px" height="240px" src="https://www.youtube.com/embed/bwBUmSze2ZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
             <div id="pricing">
@@ -431,12 +451,6 @@
                     </table>
                                   
                     <label for="description">Damage description:</label><br>
-
-                    <!--
-                        Resizeble text area should be done in JS.
-
-                        Forms should be scallable
-                    -->
                     <textarea id="description" name="description"></textarea><br>
                     <input type="file" multiple><br>
                     <input type="submit" value="Send message">
